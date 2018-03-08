@@ -1,9 +1,8 @@
 # Site settings
 title: Richards Page
 email: kubikriso@gmail.com
+telephone: 058246644423
 facebook: "https://www.facebook.com/richard.kubik11?ref=bookmarks"
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
