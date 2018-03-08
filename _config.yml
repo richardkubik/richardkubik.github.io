@@ -1,8 +1,14 @@
-# Site settings
+
 title: Richards Page
 email: kubikriso@gmail.com
 telephone: 058246644423
 facebook: "https://www.facebook.com/richard.kubik11?ref=bookmarks"
-
+github: "https://github.com/richardkubik"
 # Build settings
 markdown: kramdown
+gems: ["emoji_for_jekyll"]
+collections:
+   my_projects: 
+    outpust: true
+    permalink: /my_projects/:path/
+   

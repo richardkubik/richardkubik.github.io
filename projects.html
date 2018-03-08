@@ -1,53 +1,39 @@
 ---
-layout: default
+layout: proj
 ---
-
+ 
 <body>
-
-    
-
+ 
+   
+ 
         <div class="container">
-
+ 
     <h1 class="page-title">Zoznam projektov</h1>
-
+ 
 <div class="section">
-    <h5>Java</h5> 
+    <h5 id="java_project">Java</h5>
     <div class="row">
           <div class="col s12">
             <table>
               <thead>
                 <tr>
                     <th>Názov</th>
-                    <th>Semester</th>
-                    <th>Blud</th>
+                    <th>Rok</th>
+                    <th>Predmet</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><a href="">DBManager</a></td>
-                  <td>LS2017</td>
-                  <td>-.-.-</td>
+               
+               {% for project in site.my_projects %}
+               {% if project.jazyk contains 'Java' %}
+               <tr>
+                  <td><a href="">{{project.nazov}}</a></td>
+                  <td>{{project.rok}}</td>
+                  <td>{{project.predmet}}</td>
                 </tr>
-                <tr>
-                  <td><a href="">EntityManager</a></td>
-                  <td>LS2016</td>
-                  <td>-.-.-</td>
-                </tr>
-                <tr>
-                  <td><a href="">Bakalárska práca</a></td>
-                  <td>LS2018</td>
-                  <td>-.-.-</td>
-                </tr>
-                <tr>
-                  <td><a href="">Inteligentná škola</a></td>
-                  <td>ZS2017</td>
-                  <td>-.-.-</td>
-                </tr>
-                <tr>
-                  <td><a href="">UDP Komunikátor</a></td>
-                  <td>ZS2016</td>
-                  <td>-.-.-</td>
-                </tr>
+                {% endif %}
+                {% endfor %}
+
               </tbody>
             </table>
           </div>
@@ -55,7 +41,7 @@ layout: default
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>C</h5> 
+    <h5 id="c_project">C</h5>
     <div class="row">
           <div class="col s12">
             <table class="bordered">
@@ -99,7 +85,7 @@ layout: default
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>Assemblery</h5> 
+    <h5 id="assembly_project">Assemblery</h5>
     <div class="row">
           <div class="col s12">
             <table class="striped">
@@ -133,7 +119,7 @@ layout: default
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>C++</h5> 
+    <h5 id="c++_project">C++</h5>
     <div class="row">
           <div class="col s12">
             <table class="highlight">
@@ -155,7 +141,7 @@ layout: default
                   <td>ZS2016</td>
                   <td>-.-.-.-</td>
                 </tr>
-             	 <tr>
+                 <tr>
                    <td><a href="">Funny Thing</a></td>
                   <td>ZS2016</td>
                   <td>-.-.-.-</td>
@@ -167,7 +153,7 @@ layout: default
 </div>
 <div class="divider"></div>
 <div class="section">
-    <h5>Jekyll</h5> 
+    <h5 id="jekyll_project">Jekyll</h5>
     <div class="row">
           <div class="col s12">
             <table class="responsive-table">
@@ -190,11 +176,11 @@ layout: default
           </div>
     </div>
 </div>
-
-
+ 
+ 
 </div>
-
-
-    
-
+ 
+ 
+   
+ 
   </body>
