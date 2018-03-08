@@ -53,31 +53,15 @@ layout: proj
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                   <td><a href="">Popolvár</a></td>
-                  <td>ZS2016</td>
-                  <td>-.-.-</td>
+                 {% for project in site.my_projects %}
+               {% if project.jazyk contains 'cecko' %}
+               <tr>
+                  <td><a href="">{{project.nazov}}</a></td>
+                  <td>{{project.rok}}</td>
+                  <td>{{project.image}}</td>
                 </tr>
-                <tr>
-                  <td><a href="">Sociálna sieť</a></td>
-                  <td>ZS2016</td>
-                  <td>-.--.</td>
-                </tr>
-                <tr>
-                  <td><a href="">Paralelné prog.</a></td>
-                  <td>ZS2017</td>
-                  <td>-.-.-..-</td>
-                </tr>
-                <tr>
-                 <td><a href="">Malloc simulation</a></td>
-                  <td>ZS2016</td>
-                  <td>-.-.-</td>
-                </tr>
-                <tr>
-                 <td><a href="">BettingManager</a></td>
-                  <td>ZS2015</td>
-                  <td>-.-.-</td>
-                </tr>
+                {% endif %}
+                {% endfor %}
               </tbody>
             </table>
           </div>
@@ -90,28 +74,15 @@ layout: proj
           <div class="col s12">
             <table class="striped">
               <thead>
-                <tr>
-                    <th>Názov</th>
-                    <th>Semester</th>
-                    <th>Blud</th>
+                {% for project in site.my_projects %}
+               {% if project.jazyk contains 'ASM' %}
+               <tr>
+                  <td><a href="">{{project.nazov}}</a></td>
+                  <td>{{project.rok}}</td>
+                  <td>{{project.predmet}}</td>
                 </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="">ASMBasics</a></td>
-                  <td>LS2017</td>
-                  <td>.-.-.-</td>
-                </tr>
-                <tr>
-                  <td><a href="">Client-Server Communicator</a></td>
-                  <td>LS2017</td>
-                  <td>-.--.</td>
-                </tr>
-                <tr>
-                  <td><a href="">Decompiler</a></td>
-                  <td>LS2017</td>
-                  <td>-.-.-</td>
-                </tr>
+                {% endif %}
+                {% endfor %}
               </tbody>
             </table>
           </div>
@@ -124,28 +95,15 @@ layout: proj
           <div class="col s12">
             <table class="highlight">
               <thead>
-                <tr>
-                     <th>Názov</th>
-                    <th>Semester</th>
-                    <th>Blud</th>
+                {% for project in site.my_projects %}
+               {% if project.jazyk contains 'C++' %}
+               <tr>
+                  <td><a href="">{{project.nazov}}</a></td>
+                  <td>{{project.rok}}</td>
+                  <td>{{project.predmet}}</td>
                 </tr>
-              </thead>
-              <tbody>
-                <tr>
-                   <td><a href="">Bomberman</a></td>
-                  <td>ZS2017</td>
-                  <td>-.-.-.-</td>
-                </tr>
-                 <tr>
-                   <td><a href="">Median of Stream</a></td>
-                  <td>ZS2016</td>
-                  <td>-.-.-.-</td>
-                </tr>
-                 <tr>
-                   <td><a href="">Funny Thing</a></td>
-                  <td>ZS2016</td>
-                  <td>-.-.-.-</td>
-                </tr>
+                {% endif %}
+                {% endfor %}
               </tbody>
             </table>
           </div>
@@ -165,12 +123,15 @@ layout: proj
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><a href="">GitHub Pages</a></td>
-                  <td>LS2018</td>
-                  <td>-.-.</td>
+                 {% for project in site.my_projects %}
+               {% if project.jazyk contains 'Jekyll' %}
+               <tr>
+                  <td><a href="">{{project.nazov}}</a></td>
+                  <td>{{project.rok}}</td>
+                  <td>{{project.predmet}}</td>
                 </tr>
-               
+                {% endif %}
+                {% endfor %}
               </tbody>
             </table>
           </div>
