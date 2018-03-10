@@ -6,7 +6,7 @@ facebook: "https://www.facebook.com/richard.kubik11?ref=bookmarks"
 github: "https://github.com/richardkubik"
 # Build settings
 markdown: kramdown
-gems: ["emoji_for_jekyll"]
+plugins: [jekyll-youtube]
 collections:
    my_projects: 
     outpust: true
