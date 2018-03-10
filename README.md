@@ -27,7 +27,7 @@ Stránka personálneho webu: [richardkubik.github.io](https://richardkubik.githu
 * [Homepage](https://richardkubik.github.io/) - úvodná stránka
 * [Blog](https://richardkubik.github.io/blog/blog.html) - blog s novinkami
 * [Galéria](https://richardkubik.github.io/gallery.html) - galéria s niekoľkými fotkami
-* [O mne](hhttps://richardkubik.github.io/about.html) - stručný životopis
+* [O mne](https://richardkubik.github.io/about.html) - stručný životopis
 * [Projekty](https://richardkubik.github.io/projects.html) - zoznam a informácie o mojich projektoch
 * podstránky blogu: napr. https://richardkubik.github.io/sport/2018/03/08/gajdos-spomina.html
 
@@ -41,7 +41,7 @@ Stránka personálneho webu: [richardkubik.github.io](https://richardkubik.githu
 * email
 * tel. číslo
 * url
-* date 
+* dátum 
 * atribúty v kolekci
 ### Kolekcie alebo dátové súbory:
 Kolekcia využíta pri projektoch, v zložke my_projects.
@@ -56,10 +56,11 @@ Zoznam tagov:
 * unless 
 * contains
 * include
+* comment
 
 Zoznam filtrov:
 * date_to_string - využité na podstránke blogu
 
 
 ### aspoň 1 plugin:
-Využil som plugin "jekyll-youtube" ktorý z YouTube URL vytovrí snippet aby sa video dalo prehrávař priamo na stránke. Plugin je využitý na podstránke "Galéria", ale GitHub ho nerozozná, preto treba spustiř stránku lokálne.
+Využil som plugin "jekyll-youtube" ktorý z YouTube URL vytovrí snippet aby sa video dalo prehrávař priamo na stránke. Plugin je využitý na podstránke "Galéria", ale GitHub ho nerozozná, preto treba spustiť stránku lokálne.
