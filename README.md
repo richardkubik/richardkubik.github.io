@@ -16,7 +16,7 @@ Podrobné požiadavky na vypracovanie a odovzdanie zadania (priemerná úroveň 
 
 Stránka personálneho webu: [richardkubik.github.io](https://richardkubik.github.io/)
 
-### Testované na!
+### Testované na:
 * Google Chrome
 
 ## Použité technológie:
