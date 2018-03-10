@@ -1,14 +1,15 @@
 
 title: Richards Page
+name: Richard Kubík
 email: kubikriso@gmail.com
 telephone: 058246644423
 facebook: "https://www.facebook.com/richard.kubik11?ref=bookmarks"
 github: "https://github.com/richardkubik"
 # Build settings
+permalink: /blog/:year/:month/:day/:title
 markdown: kramdown
 plugins: [jekyll-youtube]
 collections:
    my_projects: 
-    outpust: true
+    output: true
     permalink: /my_projects/:path/
-   

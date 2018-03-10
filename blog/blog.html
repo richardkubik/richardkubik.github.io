@@ -16,7 +16,7 @@ title: Novinky zo sveta
 {% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
 
-{% assign tags = "" %}
+{% assign tags = "" w%}
 {% for tag in rawtags %}
 	{% if tag != "" %}
 		{% if tags == "" %}
@@ -30,8 +30,8 @@ title: Novinky zo sveta
 
 {% comment %}
 =======================
-The purpose of this snippet is to list all your posts posted with a certain tag.
-=======================
+Zobraz všetky články s daným tagom:::
+
 {% endcomment %}
 {% for tag in tags %}
 	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
