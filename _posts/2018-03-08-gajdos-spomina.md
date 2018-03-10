@@ -3,8 +3,10 @@ layout: post
 title: "Gajdoš najradšej spomínal na Červenú hviezdu"
 date: 2018-03-08
 category: Sport
-tags: [sport,famous]
+tags: [šport,osobnosti]
 ---
+
+
 
 <img src="/images/gajdos.jpeg">
 

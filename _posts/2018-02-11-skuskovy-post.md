@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Marec nás poriadne poskúša"
-date: 2018-03-08
+date: 2018-02-28
+category: Pocasie
+tags: [počasie]
 ---
 <img width="300px" height="500" src="/images/march.jpg">
 <p>Vstúpili sme do veľmi silného mesiaca. A tak sa nečudujme, že začneme zažívať veľmi silné útoky na naše slabé stránky. Veď ako inak by sme dokázali zmeniť vlastné koleso osudu, uvoľniť to nepotrebné z minulosti, poučiť sa a nabrať poučenie, novosť života.</p>
