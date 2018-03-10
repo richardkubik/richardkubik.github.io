@@ -63,4 +63,4 @@ Zoznam filtrov:
 
 
 ### aspoň 1 plugin:
-Využil som plugin "jekyll-youtube" ktorý z YouTube URL vytovrí snippet aby sa video dalo prehrávař priamo na stránke. Plugin je využitý na podstránke "Galéria", ale GitHub ho nerozozná, preto treba spustiť stránku lokálne.
+Využil som plugin "jekyll-youtube" ktorý z YouTube URL vytvorí snippet aby sa video dalo prehrávať priamo na stránke. Plugin je využitý na podstránke "Galéria", ale GitHub ho nerozozná, preto treba spustiť stránku lokálne.
