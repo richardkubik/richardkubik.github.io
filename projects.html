@@ -116,15 +116,33 @@ layout: proj
           <div class="col s12">
             <table class="responsive-table">
               <thead>
-                <tr>
-                    <th>Názov</th>
-                    <th>Semester</th>
-                    <th>Blud</th>
-                </tr>
               </thead>
               <tbody>
                  {% for project in site.my_projects %}
                {% if project.jazyk contains 'Jekyll' %}
+               <tr>
+                  <td><a href="">{{project.nazov}}</a></td>
+                  <td>{{project.rok}}</td>
+                  <td>{{project.predmet}}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <h5 id="XML_project">DocBook</h5>
+    <div class="row">
+          <div class="col s12">
+            <table class="responsive-table">
+              <thead>
+              </thead>
+              <tbody>
+                 {% for project in site.my_projects %}
+               {% if project.jazyk contains 'XML' %}
                <tr>
                   <td><a href="">{{project.nazov}}</a></td>
                   <td>{{project.rok}}</td>

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div><h1>Zadanie<h1></div>
+
+
+<div id="zadanie">
+            <p>Predmetom 2. zadania je spracovanie vybraného dokumentu (ideálne bakalárskeho projektu) z pôvodného ľubovoľného (Word, OpenOffice, LaTeX, …) formátu do formátu DocBook a vygenerovanie cieľového tvaru v PDF. Výsledný dokument bude mať rozsah minimálne 10 a maximálne 15 strán. Do rozsahu sa nezapočítavajú úvodné strany (obsah, zoznamy obrázkov a tabuliek), použitá literatúra a prílohy.</p>
+</div>
+
+<div><h1>Požiadavky<h1></div>
+
+<div>
+	<h3>1. štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, obsah</h3>
+	</div>
+
+
+	<p>Na členenie som používal DocBook tagy ako <b>&lt;chapter&gt;</b> pri kapitolách, <b>&lt;section&gt;</b> pri podkapitolách a vnorený  <b>&lt;section&gt;</b> pri podpodkapitolách. Obsah je týmto automaticky generovaný. Nižšie je ukážka obsahu z výsledného PDF.</p>
+	<img src="./images/content_preview.png"/>
+
+
+	<h3>2. zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním</h3>
+
+	
+	<p>Niektoré slová alebo vety sú v texte tučné, na to som použil tagy <b>&lt;emphasis role="strong"&gt;Slovo&lt;/emphasis&gt;</b> ktoré urobia bold, alebo miesto "strong" som použil "italic" ktoré spôsobia kurzívu. Pre dosiahnutie členenia textu som používal  <b>&lt;itemizedlist&gt;</b>  pri odrážkovaní, a pri číslovaní  <b>&lt;orderedlist&gt;</b> 
+	</p>
+	
+	
+	<h3>3. odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL</h3>
+	
+	<p>Text je plne citovaný, to znamená že každé číslo odkazuje na príslušnú literatúru. Na dosiahnutie tohoto som použil tag <b>&lt;xref linkend="odkaz" /&gt;.</b> Na odkazovanie na inú časť textu som zase použil 
+	<b>&lt;link  linkend="odkaz"&gt;(číslo odseku)&lt;/link&gt;</b></p>.
+
+	<h3>4. poznámka pod čiarou</h3>
+
+	<p>Na poznámku pod čiarou som použil tag <b>&lt;footnote&gt;</b></p>
+
+	<h3>5. zoznam použitej literatúry a zdrojov vrátane ich citácie v texte</h3>
+
+	<p>Ako už je spomenuté v bode 3, bibliografia je zahrnutá na konci dokumentu a všetky odkázy v citáciách sú funkčné.</p>
+
+	<h3>6. vloženie obrázku a tabuliek, odkazy na ne v texte; zoznam obrázkov a tabuliek v úvode alebo závere textu</h3>
+
+	<p>V texte sa náchadza jedna tabuľka (tabuľka pojmov). Na jej vytvorenie som použil <b>&lt;table&gt;</b>. V texte sa ďalej nachádza niekoľko obrázkov ktoré sú vložené pomocou tagu <b>&lt;imagedata fileref="meno súboru" /&gt;</b>. Zoznam obrázkov a tabuliek je hneď po obsahu dokumentu.</p>
+
+	<h3>7. vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni, napríklad „cykly, while“, „cykly, for“ (najmenej ako ukážku na 10-15 pojmoch na predvedenie práce s registrom).</h3>
+
+	<p>Netuším čo je toto</p>
+  <a href="/webove_pub.html"><img src="/images/back.png
