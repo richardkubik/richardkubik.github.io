@@ -30,7 +30,7 @@ layout: default
 	<h3>3. odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL</h3>
 	
 	<p>Text je plne citovaný, to znamená že každé číslo odkazuje na príslušnú literatúru. Na dosiahnutie tohoto som použil tag <b>&lt;xref linkend="odkaz" /&gt;.</b> Na odkazovanie na inú časť textu som zase použil 
-	<b>&lt;link  linkend="odkaz"&gt;(číslo odseku)&lt;/link&gt;</b></p>.
+	<b>&lt;link  linkend="odkaz"&gt;(číslo odseku)&lt;/link&gt;</b>. Po obsahu je taktiež zoznam obrázkov a tabuliek, ktoré odkazujú na miesta daných elementov v texte.</p>.
 
 	<h3>4. poznámka pod čiarou</h3>
 
@@ -38,13 +38,18 @@ layout: default
 
 	<h3>5. zoznam použitej literatúry a zdrojov vrátane ich citácie v texte</h3>
 
-	<p>Ako už je spomenuté v bode 3, bibliografia je zahrnutá na konci dokumentu a všetky odkázy v citáciách sú funkčné.</p>
+	<p>Na jednotlivé zložky bibliografie som používal tag &lt;bibliomixed&gt;. Ako už je spomenuté v bode 3, bibliografia je zahrnutá na konci dokumentu a všetky odkazy v textových citáciách sú funkčné a odkazujú na danú literatúru.</p>
 
 	<h3>6. vloženie obrázku a tabuliek, odkazy na ne v texte; zoznam obrázkov a tabuliek v úvode alebo závere textu</h3>
 
-	<p>V texte sa náchadza jedna tabuľka (tabuľka pojmov). Na jej vytvorenie som použil <b>&lt;table&gt;</b>. V texte sa ďalej nachádza niekoľko obrázkov ktoré sú vložené pomocou tagu <b>&lt;imagedata fileref="meno súboru" /&gt;</b>. Zoznam obrázkov a tabuliek je hneď po obsahu dokumentu.</p>
+	<p>V texte sa náchadza jedna tabuľka (tabuľka pojmov). Na jej vytvorenie som použil <b>&lt;table&gt;</b>. V texte sa ďalej nachádza niekoľko obrázkov ktoré sú vložené pomocou tagu <b>&lt;imagedata fileref="meno súboru" /&gt;</b>. Zoznam obrázkov a tabuliek je hneď po obsahu dokumentu, a bol vytvorený tak, že do thesis.xsl som na riadku 176 zvolil, aby pri tvorbe odsahu tvorilo aj zoznam obrázkov a tabuliek tým, že som doplnil parametre "table" a "figure".</p>
 
 	<h3>7. vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni, napríklad „cykly, while“, „cykly, for“ (najmenej ako ukážku na 10-15 pojmoch na predvedenie práce s registrom).</h3>
 
-	<p>Netuším čo je toto</p>
+	<p>Pre dosiahnutie registra pojmov som použil tag &lt;indexterm&gt; a na dosiahnutie členenia v ňom &lt;primary&gt; a ku kažému primárnemu som priradil niekoľko skundárnych pojmov pomocou tagu &lt;secondary&gt;.</p>
+
+	<h3>Iné zmeny</h3>
+
+	<p>Odstránenie obrázku na začiatku dokumentu som dosiahol odstránením elementu pre vloženie externého obrázku v súbore thesis-tp-fo.xsl. Riadok číslo 47. Odstránené vkladanie názvu kapitol napr. "Kapitola 1" v dokuemtne, thesis.xsl - zakomentovanie riadku 297-302 by to nevkládalo pri kapitole text "kapitola", a potom pridanie pred vlastný názov kapitoly čislo pomocou <b>&lt;xsl:apply-templates select="$node" mode="label.markup"/&gt;</b> a bodku pomocou <b>&lt;xsl:text&gt;. &lt;/xsl:text&gt;</b>. XML som overil v nástroji XMLMind a je plne validný.</p>
+
   <a href="/webove_pub.html"><img src="/images/back.png
