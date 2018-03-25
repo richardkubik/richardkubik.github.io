@@ -1,5 +1,5 @@
 
-# Zadanie
+# Zadanie - Dokumentácia
 
 Predmetom 2. zadania je spracovanie vybraného dokumentu (ideálne bakalárskeho projektu) z pôvodného ľubovoľného (Word, OpenOffice, LaTeX, …) formátu do formátu DocBook a vygenerovanie cieľového tvaru v PDF. Výsledný dokument bude mať rozsah minimálne 10 a maximálne 15 strán. Do rozsahu sa nezapočítavajú úvodné strany (obsah, zoznamy obrázkov a tabuliek), použitá literatúra a prílohy.
 
@@ -163,3 +163,5 @@ Odstránenie obrázku na začiatku dokumentu som dosiahol odstránením elementu
     <xsl:apply-templates select="$node" mode="title.markup"/>
 </fo:block>
 ```
+
+XML bolo overené v nástroji XMLMind a je plne validné.
