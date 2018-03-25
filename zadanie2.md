@@ -1,6 +1,3 @@
----
-layout: default
----
 
 # Zadanie
 
@@ -158,7 +155,7 @@ Odstránenie obrázku na začiatku dokumentu som dosiahol odstránením elementu
 <!--  <fo:external-graphic src="url(kizi.pdf)" width="2cm" content-width="scale-to-fit"/> -->
 ```
  
- Odstránené vkladania názvu kapitol napr. "Kapitola 1" v dokumente, thesis.xsl - zakomentovanie riadku 297-302 by to nevkládalo pri kapitole text "kapitola", ale len napr. 1. Úvod:
+ Odstránené vkladania názvu kapitol napr. "Kapitola 1" v dokumente, thesis.xsl - zakomentovanie riadku 297-302 aby to nevkládalo pri kapitole text "kapitola", ale len napr. 1. Úvod:
 ```
 <fo:block xsl:use-attribute-sets="chap.title.properties">
     <xsl:apply-templates select="$node" mode="label.markup"/>
