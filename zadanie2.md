@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<div><h1>Zadanie<h1></div>
+## Zadanie
+
+```xml<index type="name"/>```
 
 
 <div id="zadanie">
@@ -36,7 +38,7 @@ layout: default
 
 	<p>Na poznámku pod čiarou som použil tag <b>&lt;footnote&gt;</b></p>
 	
-	```xml<index type="name"/>```
+	
 
 	<h3>5. zoznam použitej literatúry a zdrojov vrátane ich citácie v texte</h3>
 
