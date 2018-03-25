@@ -26,7 +26,7 @@ Na členenie som používal DocBook tagy ako **&lt;chapter&gt;** pri kapitolách
 ### 2. zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním
 
 	
-Niektoré slová alebo vety sú v texte tučné, na to som použil tagy ```<emphasis role="strong">Slovo</emphasis>``` ktoré urobia bold, alebo miesto "strong" som použil ```<emphasis role="italic">Slovo</emphasis>```, ktoré spôsobia kurzívu. Pre dosiahnutie členenia textu som používal následujúce tagy:
+Niektoré slová alebo vety sú v texte tučné, na to som použil tagy ```<emphasis role="strong">Slovo</emphasis>``` , alebo miesto "strong" som použil ```<emphasis role="italic">Slovo</emphasis>```, ktoré spôsobia kurzívu. Pre dosiahnutie členenia textu som používal následujúce tagy:
 * číslovanie: **orderedlist**
 * odrážkovanie: **itemizedlist**
 
@@ -46,7 +46,7 @@ Niektoré slová alebo vety sú v texte tučné, na to som použil tagy ```<emph
 ### 3. odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL
 	
 Text je plne citovaný, to znamená že každé číslo odkazuje na príslušnú literatúru. Na dosiahnutie tohoto som použil tag```<xref linkend="odkaz" />```. Na odkazovanie na inú časť textu alebo obrázku som zase použil 
-```<link linkend="odkaz">(id elementu)</link>```>. Po obsahu je taktiež zoznam obrázkov a tabuliek, ktoré odkazujú na miesta daných elementov v texte.
+```<link linkend="odkaz">(id elementu)</link>```. Po obsahu sa nachádza zoznam obrázkov a tabuliek, ktoré odkazujú na miesta daných elementov v texte.
 
 ### 4. poznámka pod čiarou
 
@@ -129,7 +129,7 @@ V texte sa náchadza jedna tabuľka (tabuľka pojmov). Na jej vytvorenie som pou
   </mediaobject>
 </figure>
 ```
-Zoznam obrázkov a tabuliek je hneď po obsahu dokumentu, a bol vytvorený tak, že do thesis.xsl som na riadku 176 doplnil parametre tak, aby pri tvorbe odsahu tvorilo aj zoznam obrázkov a tabuliek:
+Zoznam obrázkov a tabuliek je hneď po obsahu dokumentu, a bol vytvorený tak, že do thesis.xsl som na riadku 176 doplnil parametre tak, aby pri tvorbe obsahu tvorilo aj zoznam obrázkov a tabuliek:
 ```
 <xsl:param name="generate.toc">
 book      title,toc,figure,table 
@@ -139,7 +139,7 @@ book      title,toc,figure,table
 
 ### 7. vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni, napríklad „cykly, while“, „cykly, for“ (najmenej ako ukážku na 10-15 pojmoch na predvedenie práce s registrom).
 
-Pre dosiahnutie registra pojmov som použil tag ```<indexterm>```, do dokumentu som ho vložil na koniec pomocou ```</index>```, a v texte som doňho zapisoval pojmy takto:
+Pre dosiahnutie registra pojmov som použil tag ```<indexterm>```, do dokumentu som ho vložil na koniec pomocou ```</index>```, a v texte som doňho zapisoval pojmy:
 ```	
 <indexterm>
 	<primary>Automatizovaná tvorba otázok</primary>
@@ -155,7 +155,7 @@ Odstránenie obrázku na začiatku dokumentu som dosiahol odstránením elementu
 <!--  <fo:external-graphic src="url(kizi.pdf)" width="2cm" content-width="scale-to-fit"/> -->
 ```
  
- Odstránené vkladania názvu kapitol napr. "Kapitola 1" v dokumente, thesis.xsl - zakomentovanie riadku 297-302 aby to nevkládalo pri kapitole text "kapitola", ale len napr. 1. Úvod:
+ Odstránené vkladania názvu kapitol v dokumente pomocou zakomentovania riadku 297-302 v thesis.xsl, aby to nevkládalo pri kapitole text "kapitola", ale len napr. 1. Úvod:
 ```
 <fo:block xsl:use-attribute-sets="chap.title.properties">
     <xsl:apply-templates select="$node" mode="label.markup"/>
