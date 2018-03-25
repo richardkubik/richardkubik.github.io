@@ -1,4 +1,3 @@
-url: /zadanie2
 
 # Zadanie
 
