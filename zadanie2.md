@@ -46,7 +46,7 @@ Niektoré slová alebo vety sú v texte tučné, na to som použil tagy ```<emph
 ### 3. odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL
 	
 Text je plne citovaný, to znamená že každé číslo odkazuje na príslušnú literatúru. Na dosiahnutie tohoto som použil tag```<xref linkend="odkaz" />```. Na odkazovanie na inú časť textu alebo obrázku som zase použil 
-```<link linkend="odkaz">(id elementu)</link>```. Po obsahu sa nachádza zoznam obrázkov a tabuliek, ktoré odkazujú na miesta daných elementov v texte.
+```<link linkend="odkaz">text</link>```. Po obsahu sa nachádza zoznam obrázkov a tabuliek, ktoré odkazujú na miesta daných elementov v texte.
 
 ### 4. poznámka pod čiarou
 
