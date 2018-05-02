@@ -20,27 +20,32 @@ Jej pod elementy sú:
 Element slajd môže mať atribút "bgcolor", ktorý určuje farbu pozadia
 
 V samotnom slajde môžu byť elementy:
+### Názov 
+označuje názov celej prezentácie
 ```
 <nazov>
 ```
-- označuje názov prezentácie
 
+### Meno
+je to meno autora
 ```
 <meno>
 ```
-- meno autora
 
+### Nadpis
+označuje nadpis, ktorý má byť na slajde
 ```
 <nadpis>
 ```
-- nadpis, ktorý má byť na slajde
 
+### Text
+označuje jednú odrážku slajdu, môže mať atribút "color", ktorý určuje farbu daného textu
 ```
 <text>
 ```
-- označuje jednú odrážku slajdu, môže mať atribút "color", ktorý určuje farbu daného textu
 
-Tabuľka, ktorá sa skladá z hlavičky a následne riadkov
+c Tabuľka 
+skladá sa z hlavičky a následne riadkov
 ```
 <tabulka>
 	<hlavicka>
@@ -58,12 +63,14 @@ Tabuľka, ktorá sa skladá z hlavičky a následne riadkov
 </tabulka>
 ```
 
-Obrázok, vkladá pomocou atribútu src:
+### Obrázok
+vkladaný pomocou atribútu src:
 ```
 <obrázok src="zlozka"/>
 ```
 
-Poďakovanie:
+### Poďakovanie:
+označuje ďakovný text za pozornosť na konci prezentácie
 ```
 <podakovanie>
 ```
