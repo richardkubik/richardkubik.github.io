@@ -1,4 +1,4 @@
-# Zadanie 1 - Webové publikovanie
+# Zadanie 1 - Dokumentácia
 
 Vytvorte webovú prezentáciu (webové sídlo) o sebe. Zamerajte sa jednak na vaše profesné záujmy (napr. projekty, ktoré riešite/riešili ste, čo vás v informatike najviac baví, fascinuje = váš developerský profil) a jednak vaše osobné záujmy, hobby.
 
