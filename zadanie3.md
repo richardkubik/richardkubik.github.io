@@ -23,3 +23,47 @@ V samotnom slajde môžu byť elementy:
 ```
 <nazov>
 ```
+- označuje názov prezentácie
+
+```
+<meno>
+```
+- meno autora
+
+```
+<nadpis>
+```
+- nadpis, ktorý má byť na slajde
+
+```
+<text>
+```
+- označuje jednú odrážku slajdu, môže mať atribút "color", ktorý určuje farbu daného textu
+
+Tabuľka, ktorá sa skladá z hlavičky a následne riadkov
+```
+<tabulka>
+	<hlavicka>
+		<stlpec></stlpec>
+		<stlpec></stlpec>
+	</hlavicka>
+	<riadok>
+		<stlpec></stlpec>
+		<stlpec></stlpec>
+	</riadok>
+	<riadok>
+		<stlpec></stlpec>
+		<stlpec></stlpec>
+	</riadok>
+</tabulka>
+```
+
+Obrázok, vkladá pomocou atribútu src:
+```
+<obrázok src="zlozka"/>
+```
+
+Poďakovanie:
+```
+<podakovanie>
+```
